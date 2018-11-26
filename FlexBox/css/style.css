@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width:700px;
+    margin: 0 auto;
+    border:2px solid #0e0e0e;
+    color:#fff;
+
+}
+.header{
+    display: flex;
+    padding-left: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: #8c8c8c;
+}
+.user-icon{
+
+
+    margin: 4px;
+
+
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+.button > button{
+
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+.innercontainer{
+    width:650px;
+    margin:20px auto;
+    font-family:"DejaVu Sans";
+    font-size: 20px;
+}
+.paragraph{
+    background-color: #1b6d85;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+
+}
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.flex-container > div{
+    width:200px;
+    background-color: #1c65a7;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+.flex-container2{
+    width:650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 20px;
+}
+.flex-container2 > div{
+    width:70px;
+    background-color: #5bc0de;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 20px;
+
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+img{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
