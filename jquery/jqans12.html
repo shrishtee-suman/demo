@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<div id="div" style="width: 200x;height: 200px;border: 2px solid black;">
+		<p id="para1">First Paragraph</p>
+		
+	</div>
+
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		 $("#div").click(function(){
+		 	alert("div tag");
+		 });
+		 $("#para1").click(function(){
+		 	alert("paragraph tag");
+		 });
+		 $("#para1").click(function(e){
+		 	e.stopPropagation();
+		 })
+	</script>
+</body>
+</html>

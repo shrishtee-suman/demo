@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<button id="btn">Click Me</button>
+	
+
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+		$("#btn").click(function(){
+			$("body").append("<button id='btn2'>Click Me Again</button>");
+		});
+
+		$("body").on('click',"#btn2",function(){
+			alert("on click is working");
+		});
+		$("btn2").click(function(){
+			alert("not working");
+		});
+	</script>
+
+</body>
+</html>

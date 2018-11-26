@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<div>
+		<div class="div">
+      <p>A</p>
+      <p>B</p>
+    </div>
+    <div class="div">
+      <p>A</p>
+      <p>B</p>
+      <p>C</p>
+      <p>D</p>
+    </div>
+    <div class="div">
+      <p>A</p>
+      <p>B</p>
+      <p>C</p>
+      <p>D</p>
+      <p>E</p>
+    </div>
+    <div class="div">
+      <p>A</p>
+    </div>
+	</div>
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var height = 0;
+		$(".div").each(function(){
+  		var h = $(this).height();
+  		if(h > height){
+     	height = h;
+    	 }
+    	 
+  		    
+		});
+		console.log(height);
+
+</script>
+</body>
+</html>

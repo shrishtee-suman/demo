@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+	<table border="4px" cellspacing="5px" cellpadding="5px">
+		<tr>
+			<td>12</td>
+			<td>42</td>
+			<td>86</td>
+			<td>123</td>
+			<td>41</td>
+			<td><img src="http://www.clker.com/cliparts/D/Y/s/v/C/m/wrong-md.png" width="20" height="20" id="btn"/></td>
+		</tr>
+		<tr> 
+			<td>98</td>
+			<td>32</td>
+			<td>9</td>
+			<td>3</td>
+			<td>16</td>
+			<td><img src="http://www.clker.com/cliparts/D/Y/s/v/C/m/wrong-md.png" width="20" height="20" id="btn"/></td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>28</td>
+			<td>826</td>
+			<td>12</td>
+			<td>10</td>
+			<td><img src="http://www.clker.com/cliparts/D/Y/s/v/C/m/wrong-md.png" width="20" height="20" id="btn"/></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>28</td>
+			<td>6</td>
+			<td>6</td>
+			<td>4</td>
+			<td><img src="http://www.clker.com/cliparts/D/Y/s/v/C/m/wrong-md.png" width="20" height="20" id="btn"/></td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>92</td>
+			<td>8</td>
+			<td>23</td>
+			<td>1</td>
+			<td><img src="http://www.clker.com/cliparts/D/Y/s/v/C/m/wrong-md.png" width="20" height="20" id="btn"/></td>
+		</tr>
+	</table>
+		<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$('table').on('click',function(e){
+				if(e.target.id=="btn"){
+				$.ajax({
+						url: "https://reqres.in/api/users/2", 
+						async: true, 
+						success: function(result) {   
+								console.log("Success");
+								$(e.target).closest('tr').remove();
+						}
+						,failure : function(response){
+								console.log("Failed");
+						}});
+				 }
+				});
+    		</script>
+
+</body>
+</html>

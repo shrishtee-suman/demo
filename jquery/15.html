@@ -1,0 +1,37 @@
+<html>
+<head>
+	
+ 	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="div1">
+		<h1> Heading</h1>
+		<p>This is a paragraph </p>
+	</div>
+	<button id="btn"> Click me for fetching data</button>
+
+	<div id="div2">
+		<p>
+			fetched data will appear here
+		</p>
+	</div>
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		
+    $("#btn").click(function() {
+    // data path
+        $.ajax({url: "https://reqres.in/api/users/2", async: false, success: function(result) {
+     // get Result
+
+     console.log(result);
+     var data = "<p>" + JSON.stringify(result) + "</p>";
+    $("#div2").html(data);
+        }});
+    });
+
+
+
+	</script>
+</body>
+</html>
+
