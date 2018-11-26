@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height:100%;
+
+}
+body{
+    height:100%;
+}
+h1{
+    margin-left: 100px;
+    margin-top:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkcyan;
+}
+nav{
+    float:right;
+    margin-top:-20px;
+    margin-right: 100px;
+    color:darkcyan;
+}
+hr{
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top:50px;
+}
+.container{
+    background-color: lightgray;
+    /*-left: 350px;
+    margin-right:350px;
+    margin-top:20px;
+    height:130%;*/
+    border-radius: 2%;
+    max-width:586px;
+    width:100%;
+    margin:0 auto;
+
+    
+    
+    
+}
+
+h2{
+    padding-left: 20px;
+    padding-top:30px;
+    padding-bottom:20px;
+    color:white;
+}
+#secondchild{
+    height:90%;
+    background-color: white;
+    color:lightslategray;
+    
+    margin-left:2px;
+    margin-right:2px;
+}
+p{
+    
+    padding-top:15px;
+    padding-left:25px;
+}
+#t1{
+    
+    width:520px;
+    margin-left:25px;
+    margin-top:4px;
+    height:25px;
+}
+#t2{
+    width:530px;
+    margin-left: 25px;
+    margin-top: 4px;
+    height:100px;
+    border: 1px solid gray;
+    border-radius: 2%;
+}
+select{
+    background-color: mediumseagreen;
+    width:530px;
+    margin-top:4px;
+    height:40px;
+    margin-left:25px;
+    border:1px solid gray;
+    border-radius: 3%;
+    color:white;
+}
+#t3{
+    margin-top:4px;
+    margin-left:25px;
+    height:35px;
+    width:120px;
+}
+#ip1{
+    margin-top:7px;
+    color:lightslategray;
+    margin-left:25px;
+
+}
+#ip2{
+    margin-top:7px;
+    margin-left:175px;
+
+}
+#fileupload{
+    width:520px;
+    margin-left:25px;
+    margin-top:7px;
+    padding-left:15px;
+    
+    height:40px;
+    border:1px solid gray;
+    border-radius:4%;
+    
+    
+   
+}
+hr{
+    margin-left:0px;
+    margin-right: 0px;
+    color:lightslategray;
+    margin-top:10px;
+
+}
+#t4{
+    margin-top:10px;
+    width:80px;
+    height:40px;
+    background-color:mediumseagreen;
+    border-radius:1px solid gray;
+    border-radius:12%;
+    margin-right:10px;
+    float:right;
+    color:white;
+}
+
