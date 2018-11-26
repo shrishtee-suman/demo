@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Form</title>
+	<link rel="stylesheet" type="text/css" href="sass_files/css/style.css">
+		
+	
+</head>
+<body>
+
+</body>
+	<header>
+		<h1>TO THE NEW</h1>
+		<nav>
+			<ul>
+				<li><a href="https://www.google.com">Home</a></li>
+				<li><a href="https://www.google.com">Quick Help</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<form action="#">
+			<h2>Bug Report</h2>
+		<div class="common"> <label>Title:*</label>
+            <input type="text"  class="common1" required pattern="[A-Za-z]"></div>
+           <div class="common"> <label >Description:*</label>
+            <textarea class="common1" id="scroll" required></textarea></div>
+           <div class="common"> <label>Operating System:*</label>
+            <select class="common1" required>
+                <option value="Windows XP">Windows XP</option>
+                <option value="Linux">Linux</option>
+                <option value="Windows 8">Windows 8</option>
+                <option value="Windows 10">Windows 10</option>
+            </select></div>
+           <div class="common"> <label>Product:*</label>
+            <select class="common1" required>
+                    <option value="Formoid">Formoid</option>
+                
+
+            </select></div>
+            <div class="common"><label>Version:*</label>
+            <input type="text" required></div>
+           <div class="common"> <label>License:*</label>
+            <input type="radio" name="selection" value="Free" checked >Free
+            <input type="radio" name="selection" value="Business">Business</div>
+            <div class="common"><label>Severity:*</label>
+            <select class="common1" required>
+                <option value="Critical">Critical</option>
+                <option value="Trivial">Trivial</option>
+                <option value="Major">Major</option>
+                <option value="Minor">Minor</option>
+            </select></div>
+            <div class="common"><label>Attachments:*</label></div>
+           <label for="file-input" class="common" id="label" required>No File Selected
+           <label for="file-input" id="label1">Choose File</label></label>
+    		<input type="file" id="file-input">
+            <footer>
+            <input type="submit" value="Send" id="btn">  
+        </footer>
+            
+         </label>  
+	</div>
+</html>

@@ -1,0 +1,126 @@
+*{
+	margin:0;
+	padding:0;
+}
+$base-color:gray;
+$color1:cyan;
+$base-color1:#33FFB2;
+
+@mixin margin()
+{
+	margin:20px;
+}
+@mixin display($display:inline-block)
+{
+	display:$display;
+}
+
+@mixin border()
+{
+	border-style:solid;
+	border-width:2px;
+	border-colour:black;
+}
+@mixin padding($padding:20px)
+{
+	padding:$padding;
+}
+@mixin border-radius($radius:7px)
+{
+	border-radius:$radius;
+}
+
+
+header{
+	background-color:$base-color;
+	color:$color1;
+	@include padding;
+	margin-bottom: 20px;
+}
+nav{
+	float:right;
+	ul{
+	li{
+		list-style-type: none;
+			@include display();
+			a{
+				text-decoration: none;
+				color:$color1;
+			}
+	}
+	}
+}
+h1{
+			@include display();
+
+
+		}
+.container{
+	
+	@include border;
+			width: 500px;
+			margin: 0 auto;
+			@include border-radius;
+}
+.common{
+	@include margin;
+}
+h2{
+			background-color: $base-color;
+			text-align: center;
+			@include padding;
+			text-decoration: underline;
+			color: white;
+		}
+
+.common1{
+			width: 450px;
+			@include padding(5px);
+			box-sizing: border-box;
+			@include border-radius(4px);
+			margin-top: 10px;
+		}
+
+#scroll{
+			overflow: scroll;
+		}
+
+#file-input{
+			opacity:0;
+			}
+#btn{
+			float: right;
+			clear: both;
+			@include padding(5px);
+			width: 80px;
+			@include border-radius;
+
+	}
+	#btn,form{
+			background-color:$base-color1;
+		}
+	label{
+			@include display(block);
+		}
+	#label{
+			@include display;
+			@include border;
+			
+			margin-top: 10px;
+			
+			width: 450px;
+			background-color: white;
+		}
+		#label1{
+			@include display;
+			@include border; 
+			background-color: #D3D3D3;
+			@include padding(10px);
+			float: right;
+		}
+		footer{
+			@include padding(30px); 
+			background-color:$base-color;
+		}
+
+
